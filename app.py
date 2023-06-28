@@ -13,3 +13,6 @@ def postPronpt():
     client = Send_osc(data['prompt'])
     client.send()
     return 'OK'
+
+if __name__ == '__main__':
+    app.run(debug = True,port = 11000)
